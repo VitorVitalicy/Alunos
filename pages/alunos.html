@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Alunos</title>
+</head>
+<body>
+    <header>
+        <h1><a href="main.html" rel="prev">PLANO DE AULAS</a></h1>     
+    </header>
+
+    <nav id="menu">
+        <a class="menubar" href="#">Resumo de alunos</a><br>
+        <a class="menubar" href="#">Calendário</a><br>
+        <a class="menubar" href="#">Financeiro</a><br>
+        <a class="menubar" href="#">Histórico</a><br>
+        <a class="menubar" href="#">Projetos</a><br>
+    </nav>
+
+    <main>
+        <button class="addStudy" 
+        id="ibutton"
+        type="button"
+        onclick="addStudy()">Adicionar um aluno</button>
+
+        <div id="forms">
+            <form action="" value="Cadastro">
+                <input type="text" name="name" id="iname" placeholder="Nome do aluno:">
+                <input type="text" name="place" id="iplace" placeholder="Local:">
+                <input type="text" name="serie" id="iserie" placeholder="Série:">
+                <input type="text" name="value" id="ivalue" placeholder="Valor:">
+                <br><br>
+                <input class="controls" type="reset" value="Limpar">
+                <button class="addStudy"
+                type="button" 
+                value="Cadastrar" 
+                onclick="addStudy();">Cadastrar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Aluno</th>
+                    <th>Quantidade de aulas</th>
+                    <th>Local</th>
+                    <th>Serie</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="teste">wiubowhvbowuv</td>
+                </tr>
+            </tbody>
+            <tr>
+
+            </tr>
+        </table>
+
+    
+    </main>
+
+    <footer>
+        <p>Desenvolvido por VitorVitalicy.</p>
+    </footer>
+
+    <script>
+        function addStudy(){
+            const studiesData = [];
+
+            let name = iname.innerHTML;
+            studiesData.push(name);
+            let place = iplace.innerHTML;
+            studiesData.push(place);
+            let serie = iserie.innerHTML;
+            studiesData.push(serie);
+            let value = ivalue.innerHTML;
+            studiesData.push(value);
+
+
+            document.getElementById("teste").innerHTML = studiesData;
+        }
+    </script>
+</body>
+</html>

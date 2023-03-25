@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --headerColor: #0854B0;
+    --navColor:#4080CD;
+    --wallpaperColorStart:#5a4ad36b;
+    --wallpaperColorFinal:#2f1bcae3;
+    --buttonColor: #34CDA3;
+}
+
+body{
+    position: relative;
+    background-image: linear-gradient(to bottom, var(--wallpaperColorStart), var(--wallpaperColorFinal));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    position: relative;
+    height: 8vh;
+    background-color: var(--headerColor);
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+header a {
+    text-decoration: solid;
+    color: black;
+}
+
+nav#menu{
+    position: absolute;
+    left: 79%;
+    top: 0%;
+    background-color: var(--navColor);
+    width: 19.9vw;
+    max-height: 50vh;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom-left-radius: 5px;
+    
+}
+
+a.menubar{
+    display: block;
+    text-decoration: solid;
+    background-color: gray;
+    color: black;
+    width: 15vw;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.829);
+}
+
+a.menubar:hover{
+    
+    border: 1px solid rgb(226, 226, 226);
+}
+
+a.menubar:active{
+    transform: translate(1%, 5%);
+}
+
+main{
+    width: 90vw;
+    background-color: antiquewhite;
+    margin: auto;
+    box-shadow: 4px 4px 10px 1px black;
+    padding: 20px;
+}
+
+div.main{
+    position: relative;
+    display: inline-block;
+    background-color: gray;
+    margin: 10px;
+    width: 20vw;
+    height: 15vh;
+    
+}
+
+p{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    font-size: larger;
+    font-weight: 800;
+}
+
+h2{
+    padding: 5px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #34CDA3, rgba(255, 255, 255, 0));
+}
+
+button.addStudy{
+    background-color: var(--buttonColor);
+    padding: 10px;
+    font-size: 1.2em;
+    border: #0f352b;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+button.addStudy:hover{
+    background-color: #0ac593;
+    transform: translate(3%, 3%);
+}
+
+div#forms{
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(194, 193, 193, 0.63);
+}
+
+div#forms form input{
+    height: 40px;
+    width: 230px;
+}
+
+.controls{
+    background-color: var(--buttonColor);
+    padding: 10px;
+    font-size: 1.2em;
+    border: #0f352b;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
+    margin-right: 20px;
+    width: 100px;
+
+}
+
+.controls:hover{
+    background-color: #0ac593;
+    transform: translate(3%, 3%);
+}
+
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid black;
+    padding: 5px 50px;
+}
+
+footer{
+    position: fixed;
+    width: 98vw;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    bottom:0%;
+}
