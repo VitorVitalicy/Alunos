@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="../styles/style.css" media="all">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Alunos</title>
 </head>
@@ -25,65 +25,54 @@
         <button class="addStudy" 
         id="ibutton"
         type="button"
-        onclick="addStudy()">Adicionar um aluno</button>
+        onclick="">Adicionar um aluno</button>
 
         <div id="forms">
-            <form action="" value="Cadastro">
-                <input type="text" name="name" id="iname" placeholder="Nome do aluno:">
-                <input type="text" name="place" id="iplace" placeholder="Local:">
-                <input type="text" name="serie" id="iserie" placeholder="Série:">
-                <input type="text" name="value" id="ivalue" placeholder="Valor:">
+            <form  method="POST">
+                <input type="" id="iname" name="name"  placeholder="Nome do aluno:">
+                <input type="text" id="iplace" name="place" placeholder="Local:">
+                <input type="text" id="iserie" name="serie" placeholder="Série:">
+                <input type="text" id="ivalue" name="value" placeholder="Valor:">
                 <br><br>
                 <input class="controls" type="reset" value="Limpar">
                 <button class="addStudy"
                 type="button" 
                 value="Cadastrar" 
-                onclick="addStudy();">Cadastrar</button>
+                onclick="addStudy()">Cadastrar</button>
+            </form>
         </div>
+
+        
+
 
         <table>
             <thead>
                 <tr>
                     <th>Aluno</th>
-                    <th>Quantidade de aulas</th>
                     <th>Local</th>
                     <th>Serie</th>
                     <th>Valor</th>
+                    <th>Quantidade de aulas</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td id="teste">wiubowhvbowuv</td>
+                    <td id="00">Teste</td>
+                    <td id="01">Teste</td>
+                    <td id="02">Teste</td>
+                    <td id="03">Teste</td>
                 </tr>
             </tbody>
             <tr>
-
             </tr>
         </table>
-
-    
     </main>
 
     <footer>
         <p>Desenvolvido por VitorVitalicy.</p>
     </footer>
 
-    <script>
-        function addStudy(){
-            const studiesData = [];
-
-            let name = iname.innerHTML;
-            studiesData.push(name);
-            let place = iplace.innerHTML;
-            studiesData.push(place);
-            let serie = iserie.innerHTML;
-            studiesData.push(serie);
-            let value = ivalue.innerHTML;
-            studiesData.push(value);
-
-
-            document.getElementById("teste").innerHTML = studiesData;
-        }
+    <script src="../JSfiles/file.js">
     </script>
 </body>
 </html>
